@@ -1,0 +1,48 @@
+[
+    {
+      "question_text": "What is the capital of Japan?",
+      "answer_options": [
+        { "answer_text": "Tokyo", "is_correct": true },
+        { "answer_text": "Beijing", "is_correct": false },
+        { "answer_text": "Seoul", "is_correct": false },
+        { "answer_text": "Bangkok", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which gas do plants primarily use for photosynthesis?",
+      "answer_options": [
+        { "answer_text": "Oxygen", "is_correct": false },
+        { "answer_text": "Carbon Dioxide", "is_correct": true },
+        { "answer_text": "Hydrogen", "is_correct": false },
+        { "answer_text": "Nitrogen", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Which planet is known as the 'Red Planet'?",
+      "answer_options": [
+        { "answer_text": "Earth", "is_correct": false },
+        { "answer_text": "Mars", "is_correct": true },
+        { "answer_text": "Venus", "is_correct": false },
+        { "answer_text": "Jupiter", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "What is the largest mammal?",
+      "answer_options": [
+        { "answer_text": "Elephant", "is_correct": false },
+        { "answer_text": "Blue Whale", "is_correct": true },
+        { "answer_text": "Giraffe", "is_correct": false },
+        { "answer_text": "Lion", "is_correct": false }
+      ]
+    },
+    {
+      "question_text": "Who wrote the famous play 'Hamlet'?",
+      "answer_options": [
+        { "answer_text": "William Shakespeare", "is_correct": true },
+        { "answer_text": "Charles Dickens", "is_correct": false },
+        { "answer_text": "Jane Austen", "is_correct": false },
+        { "answer_text": "George Orwell", "is_correct": false }
+      ]
+    }
+  ]
+  
