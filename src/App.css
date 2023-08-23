@@ -10,26 +10,27 @@ body {
 
 .app {
   background-color: #435B66;
-  width: 100%;
+  width: 500px;
   min-height: 250px;
   height: min-content;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .score-section {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .question-section {
   width: 100%;
   position: relative;
-  text-align: center;
+}
+
+.question-count {
+  margin-bottom: 20px;
 }
 
 .question-count span {
@@ -37,8 +38,7 @@ body {
 }
 
 .question-text {
-  font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .answer-section {
@@ -46,7 +46,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 button {
@@ -57,12 +56,11 @@ button {
   background-color: #405660;
   border-radius: 15px;
   display: flex;
-  padding: 10px;
+  padding: 5px;
   justify-content: space-between;
   align-items: center;
   border: 5px solid #2c3f52;
   cursor: pointer;
-  margin-bottom: 10px;
 }
 
 .correct-answer {
@@ -112,19 +110,12 @@ button svg {
 
 .actions {
   display: flex;
-  flex-direction: column;
   margin-top: 15px;
 }
 
 .actions button {
   background-color: #435B66;
   justify-content: center;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.actions button:last-child {
-  margin-bottom: 0;
 }
 
 .actions button:hover {
@@ -137,6 +128,7 @@ button svg {
   .app {
     width: 100%;
     padding: 10px;
+    flex-direction: column;
   }
 
   .question-count span {
@@ -149,26 +141,20 @@ button svg {
 
   button {
     font-size: 14px;
-    padding: 8px; /* Adjust padding for smaller buttons */
   }
 
-  .answer-section {
-    align-items: flex-start; /* Align answers to the left for smaller devices */
+ 
+  .question-section {
+    text-align: center; 
   }
 
-  .correct-answer::before,
-  .incorrect-answer::before {
-    right: auto;
-    left: 10px; /* Position tick/cross to the left for smaller devices */
-  }
-
-  .actions {
-    flex-direction: column;
-    align-items: center; /* Center-align action buttons for smaller devices */
-  }
-
-  .actions button {
-    width: auto;
+  .question-text {
+    margin-bottom: 20px; 
   }
 }
-
+@media (max-width: 480px) {
+  button {
+    font-size: 12px; 
+    padding: 3px; 
+  }
+}
